@@ -5,7 +5,7 @@ date: 2019-03-13
 excerpt: "Fourier Transforms"
 tags: [Fourier Transform, Matlab]
 comments: false
-projects: true
+project: true
 ---
 
 ## Important points to note :
