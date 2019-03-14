@@ -18,3 +18,8 @@ Fx = fft(fx);
 Fx(1)/length(Fx)
 
 ```
+
+The above code would yield the result 5, implying the zero frequency contains the
+total power of the system.
+
+* Second point to be noticed is the data can be normalized by the length of data.
