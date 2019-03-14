@@ -12,6 +12,9 @@ comments: true
 DC component of the signal analyzed.
 
 ```python
-s = "Python syntax highlighting"
-print s
+t = 1:0.01:100;
+fx = 5 + sin(2*pi()*t);
+Fx = fft(fx);
+Fx(1)/length(Fx)
+
 ```
