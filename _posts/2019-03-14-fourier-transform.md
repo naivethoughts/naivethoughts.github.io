@@ -39,4 +39,4 @@ would suffice.
 The Matlab one dimensional fft code to evaluate the alteranating component can
 be obtained from
 
-[github](https://github.com/)
+[github](https://raw.githubusercontent.com/naivethoughts/NaiveCodes/master/FFT_DATA.m)
