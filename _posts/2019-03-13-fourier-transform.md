@@ -24,10 +24,18 @@ total power of the system.
 
 * Second point to be noticed is the data can be normalized by the length of data.
 
-* The fft function of matlab produces a symmetric Discrete Fourier Transform(DFT)
-about the (Nyquist Frequency)[https://en.wikipedia.org/wiki/Nyquist_frequency].
-Hence *(fftshift)*[https://www.mathworks.com/help/matlab/ref/fftshift.html], can
+* The fft function of matlab produces a symmetric Discrete Fourier Transform (DFT)
+about the [Nyquist Frequency](https://en.wikipedia.org/wiki/Nyquist_frequency).
+Hence *[fftshift]*(https://www.mathworks.com/help/matlab/ref/fftshift.html), can
 be used to shift zero frequency to the center.
 
-* The alternating component would range from the second element of DFT to half of
-the sampling frequency (fs).
+* Alterntively, the alternating component would range from the second element of
+DFT to half of the sampling frequency (fs).
+
+* Finally to obtain, the power of the signal multiplying by a conjugate of the DFT
+would suffice.
+
+The Matlab one dimensional fft code to evaluate the alteranating component can
+be obtained from
+
+[github](https://github.com/) 
