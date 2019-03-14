@@ -39,9 +39,9 @@ effects on the human health and welfare of the biosphere for the last couple of
 decades. Another unforeseen event was the decrease in the economic activities
 associated with the agriculture and fishing. And this disastrous effect of the
 changing climate on the developing nations occupying a geographical position of
-$\pm$30$^o$ latitude, where 6/7$^{th}$ of the total global population lives and
-the primary economic activities are related to agriculture, animal husbandry and
-fishing.
++/- 30<sup>o</sup>C latitude, where 6/7<sup>th</sup> of the total global
+population lives and the primary economic activities are related to agriculture,
+animal husbandry and fishing.
 
 However the main contributors to the anthropogenic emissions are the
 industrialized nations, where less than 15% of the global population reside,
