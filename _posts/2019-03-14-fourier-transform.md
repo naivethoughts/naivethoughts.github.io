@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Fourier Transforms using Matlab"
+title: "Fourier Transforms using Matlab Codes"
 date: 2019-03-13
 excerpt: "Fourier Transforms"
 tags: [Fourier Transform, Matlab]
 comments: false
-codes: true
+projects: true
 ---
 
 ## Important points to note :
