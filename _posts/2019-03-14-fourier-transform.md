@@ -49,12 +49,12 @@ Syntax
 
 Adapted from
 
-*[Matlab Sunspots example](https://www.mathworks.com/help/matlab/examples/using-fft.html)
+* [Matlab Sunspots example](https://www.mathworks.com/help/matlab/examples/using-fft.html)
 
-*[Matlab Spectral Analysis example](https://www.mathworks.com/help/matlab/examples/fft-for-spectral-analysis.html)
+* [Matlab Spectral Analysis example](https://www.mathworks.com/help/matlab/examples/fft-for-spectral-analysis.html)
 
 More interesting information can be found at
 
-*[http://www.thefouriertransform.com/](http://www.thefouriertransform.com/)
+* [http://www.thefouriertransform.com/](http://www.thefouriertransform.com/)
 
-*[https://jackschaedler.github.io/circles-sines-signals/dft_introduction.html](https://jackschaedler.github.io/circles-sines-signals/dft_introduction.html)
+* [https://jackschaedler.github.io/circles-sines-signals/dft_introduction.html](https://jackschaedler.github.io/circles-sines-signals/dft_introduction.html)
