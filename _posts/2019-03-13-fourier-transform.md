@@ -23,3 +23,9 @@ The above code would yield the result 5, implying the zero frequency contains th
 total power of the system.
 
 * Second point to be noticed is the data can be normalized by the length of data.
+
+* The fft function of matlab produces a symmetric Discrete Fourier Transform(DFT) about the
+(Nyquist Frequency)[https://en.wikipedia.org/wiki/Nyquist_frequency]. Hence *(fftshift)*[https://www.mathworks.com/help/matlab/ref/fftshift.html], can be used to shift zero frequency to the center.
+
+* The alternating component would range from the second element of DFT to half of
+the sampling frequency (fs).
