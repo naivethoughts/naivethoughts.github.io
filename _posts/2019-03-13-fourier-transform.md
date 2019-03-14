@@ -26,7 +26,7 @@ total power of the system.
 
 * The fft function of matlab produces a symmetric Discrete Fourier Transform (DFT)
 about the [Nyquist Frequency](https://en.wikipedia.org/wiki/Nyquist_frequency).
-Hence *[fftshift]*(https://www.mathworks.com/help/matlab/ref/fftshift.html), can
+Hence *[fftshift](https://www.mathworks.com/help/matlab/ref/fftshift.html)*, can
 be used to shift zero frequency to the center.
 
 * Alterntively, the alternating component would range from the second element of
@@ -38,4 +38,4 @@ would suffice.
 The Matlab one dimensional fft code to evaluate the alteranating component can
 be obtained from
 
-[github](https://github.com/) 
+[github](https://github.com/)
