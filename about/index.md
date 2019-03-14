@@ -1,14 +1,14 @@
 ---
 layout: page
 title: About the author
-tags: [about, author, phd]
+tags: [about, author, PhD]
 date: 2016-03-21
 comments: false
 ---
 
 Hi, I am Subin Thomas - a third year PhD student working on Large Eddy
 Simulations of atmosphere at Michigan Technological University. This website
-serve as a  repository for my opinions, codes and thoughts. I have broad
+serves as a  repository for my opinions, codes and thoughts. I have broad
 interests ranging  from existential nihilism to the climate change policy making
 and hence will be posting on several topics.
 
@@ -28,12 +28,12 @@ lot to differentiate between good and bad code. (*Someone can bin my code can
 also as bad*). Therefore, I also want to share the simple tools - developed by
 me based on several other codes to serve as a general guideline to novice
 programmers.
-> Most of the codes are in Matlab and uses inbuilt functions - Hence, I am working on a python version of these codes and will be uploding
-after testing. Please feel free to contact me via mail - if you have any
-suggestions or corner cases.
+> Most of the codes are in Matlab and uses inbuilt functions - Hence, I am working
+on a python version of these codes and will be uploding after testing. Please
+feel free to contact me via mail - if you have any suggestions or corner cases.
 
 Though I could have used a blogspot for the same purpose, I found the ads quite
-distracting. Furthermore, I was inclined on learning about building and hosting
+distracting. Furthermore, I was inclined to learn about building and hosting
 a website from scratch. The website in the current format is forked from
 
  [Moon Theme](https://taylantatli.github.io/Moon/)

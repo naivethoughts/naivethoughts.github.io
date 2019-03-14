@@ -7,11 +7,11 @@ tags: [Fourier Transform, Matlab]
 comments: true
 ---
 
-## Points to remember :
+## Important points to note :
 * First element of the Fourier transform, corresponds to the zeroth frequency -
 DC component of the signal analyzed.
 
-```python
+```matlab
 t = 1:0.01:100;
 fx = 5 + sin(2*pi()*t);
 Fx = fft(fx);
