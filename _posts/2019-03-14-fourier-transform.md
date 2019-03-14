@@ -40,8 +40,7 @@ would suffice.
 The Matlab one dimensional fft code to evaluate the alteranating component can
 be obtained from
 
-[github](https://raw.githubusercontent.com/naivethoughts/NaiveCodes/master/FFT_DATA.m)
-<a class="btn zoombtn" href="{{ site.url }}/codes/FFT_DATA.m">download</a>
+<a class="btn zoombtn" href="{{ site.url }}/codes/FFT_DATA.m">download  </a>
 
 Syntax
 ```Matlab
