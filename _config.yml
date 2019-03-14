@@ -37,12 +37,12 @@ disqus_shortname:   subint
   #ad-client:
   #ad-slot:
 #bing-verify:
-#email:
-twitter:            subint
+email:            subint@mtu.edu
+#twitter:            subint
 #facebook:           username
-github-url:         subint
+github-url:       subint
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-linkedin:          subint
+linkedin:         subint
 #xing:              username
 #instagram:          username
 #lastfm:            username
