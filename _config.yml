@@ -37,7 +37,7 @@ disqus_shortname:   subint
   #ad-client:
   #ad-slot:
 #bing-verify:
-email:            subint@mtu.edu
+# email:            subint@mtu.edu
 #twitter:            subint
 #facebook:           username
 github-url:       subintmtu

@@ -27,8 +27,8 @@ related to fluid dynamics or rather basic statistics. Hence, I had to struggle a
 lot to differentiate between good and bad code. (*Someone can bin my code can
 also as bad*). Therefore, I also want to share the simple tools - developed by
 me based on several other codes to serve as a general guideline to novice
-programmers. > Most of the codes are in Matlab and uses inbuilt functions -
->Hence, I am working on a python version of these codes and will be uploding
+programmers.
+> Most of the codes are in Matlab and uses inbuilt functions - Hence, I am working on a python version of these codes and will be uploding
 after testing. Please feel free to contact me via mail - if you have any
 suggestions or corner cases.
 
