@@ -2,7 +2,8 @@
 layout: post
 title: "Fourier Transforms using Matlab Codes"
 date: 2019-03-14
-excerpt: "Fourier Transforms"
+excerpt: "Fourier Transform code to obtain spectrum and power for alternating
+component of the signal"
 tags: [Fourier Transform, Matlab]
 comments: false
 codes: true
@@ -40,3 +41,18 @@ The Matlab one dimensional fft code to evaluate the alteranating component can
 be obtained from
 
 [github](https://raw.githubusercontent.com/naivethoughts/NaiveCodes/master/FFT_DATA.m)
+<a class="btn zoombtn" href="{{ site.url }}/codes/FFT_DATA.m">download</a>
+
+Syntax
+```Matlab
+ [Freq,DFT,Power] = FFT_DATA(rawData, SamplingFrequency)
+````
+
+Adapted from
+[Matlab Sunspots example](https://www.mathworks.com/help/matlab/examples/using-fft.html)
+[Matlab Spectral Analysis example](https://www.mathworks.com/help/matlab/examples/fft-for-spectral-analysis.html)
+
+More interesting information can be found at
+
+[http://www.thefouriertransform.com/](http://www.thefouriertransform.com/)
+[https://jackschaedler.github.io/circles-sines-signals/dft_introduction.html](https://jackschaedler.github.io/circles-sines-signals/dft_introduction.html)
