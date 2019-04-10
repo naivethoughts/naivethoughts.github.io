@@ -16,3 +16,7 @@ Last updated : 03/29/2019
 ## Programming Assignment 2 :
 
 <a class="btn btn-danger" href="{{ site.url }}/codes/machine-learning-ex2.zip"> Logistic Regression & Regularization </a>
+
+## Programming Assignment 3 :
+
+<a class="btn btn-danger" href="{{ site.url }}/codes/machine-learning-ex3.zip"> Multi Class Classification & Neural Network </a>
