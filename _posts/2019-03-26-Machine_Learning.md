@@ -24,3 +24,7 @@ Last updated : 03/29/2019
 ## Programming Assignment 4 :
 
 <a class="btn btn-danger" href="{{ site.url }}/codes/machine-learning-ex4.zip"> Neural Network Learning </a>
+
+## Programming Assignment 5 :
+
+<a class="btn btn-danger" href="{{ site.url }}/codes/machine-learning-ex5.zip"> Regularized Linear Regression and Bias/Variance </a>
