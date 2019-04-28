@@ -7,7 +7,7 @@ tags: [Machine-Learning, Matlab]
 comments: false
 codes: true
 ---
-Last updated : 03/29/2019
+Last updated : 04/28/2019
 
 ## Programming Assignment 1 :
 
@@ -30,6 +30,6 @@ Last updated : 03/29/2019
 <a class="btn btn-danger" href="{{ site.url }}/codes/machine-learning-ex5.zip"> Regularized Linear Regression and Bias/Variance </a>
 
 
-## Programming Assignment 5 :
+## Programming Assignment 6 :
 
 <a class="btn btn-danger" href="{{ site.url }}/codes/machine-learning-ex6.zip"> Support Vector Machines </a>
