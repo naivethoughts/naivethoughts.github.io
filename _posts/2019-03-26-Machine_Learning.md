@@ -28,3 +28,8 @@ Last updated : 03/29/2019
 ## Programming Assignment 5 :
 
 <a class="btn btn-danger" href="{{ site.url }}/codes/machine-learning-ex5.zip"> Regularized Linear Regression and Bias/Variance </a>
+
+
+## Programming Assignment 5 :
+
+<a class="btn btn-danger" href="{{ site.url }}/codes/machine-learning-ex6.zip"> Support Vector Machines </a>
