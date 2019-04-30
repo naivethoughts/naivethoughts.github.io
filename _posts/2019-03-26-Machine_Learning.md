@@ -33,3 +33,7 @@ Last updated : 04/28/2019
 ## Programming Assignment 6 :
 
 <a class="btn btn-danger" href="{{ site.url }}/codes/machine-learning-ex6.zip"> Support Vector Machines </a>
+
+## Programming Assignment 7 :
+
+<a class="btn btn-danger" href="{{ site.url }}/codes/machine-learning-ex7.zip"> K-Means Clustering and PCA </a>
