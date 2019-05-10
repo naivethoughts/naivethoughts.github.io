@@ -17,17 +17,10 @@ under examination.
 ## 2. Basic Data Exploration
 Pandas library, is used as the primary tool to explore data.
 {% highlight css %}
-#container{
-import pandas as pd
-filePath = '../raw_data.csv'
-raw_data = pd.read_csv(filePath)
-raw_data.describe()
-}
-{% endhighlight %}
-
 ```Python
 import pandas as pd
 filePath = '../raw_data.csv'
 raw_data = pd.read_csv(filePath)
 raw_data.describe()
 ```
+{% endhighlight %}
