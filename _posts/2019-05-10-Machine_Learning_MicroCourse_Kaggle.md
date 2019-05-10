@@ -2,7 +2,7 @@
 layout: post
 title: "Machine Learning Microcourse - Kaggle"
 date: 2019-05-10
-excerpt: "Notes on machine learning, micro - course in Kaggle"
+excerpt: "Notes on machine learning microcourse from Kaggle"
 tags: [Machine-Learning, Python]
 comments: false
 codes: true
@@ -16,9 +16,18 @@ under examination.
 
 ## 2. Basic Data Exploration
 Pandas library, is used as the primary tool to explore data.
+{% highlight css %}
 #container{
 import pandas as pd
 filePath = '../raw_data.csv'
 raw_data = pd.read_csv(filePath)
 raw_data.describe()
 }
+{% endhighlight %}
+
+```Python
+import pandas as pd
+filePath = '../raw_data.csv'
+raw_data = pd.read_csv(filePath)
+raw_data.describe()
+```
