@@ -1,0 +1,15 @@
+---
+layout: post
+title: "Machine Learning - Kaggle - Notes"
+date: 2019-05-10
+excerpt: "Notes on machine learning, micro - course in Kaggle"
+tags: [Machine-Learning, Python]
+comments: false
+codes: true
+---
+Last updated : 05/10/2019
+
+## 1. How models work ?
+The accuracy of final decision (leaf) depends on capturing and comparing crucial
+features/characteristics (splits based on training dataset) of the data 
+under examination.
