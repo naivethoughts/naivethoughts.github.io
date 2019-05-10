@@ -13,3 +13,12 @@ Last updated : 05/10/2019
 The accuracy of final decision (leaf) depends on capturing and comparing crucial
 features/characteristics (splits based on training dataset) of the data
 under examination.
+
+## 2. Basic Data Exploration
+Pandas library, is used as the primary tool to explore data.
+#container{
+import pandas as pd
+filePath = '../raw_data.csv'
+raw_data = pd.read_csv(filePath)
+raw_data.describe()
+}
