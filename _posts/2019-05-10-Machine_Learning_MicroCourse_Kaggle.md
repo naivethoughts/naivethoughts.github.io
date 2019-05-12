@@ -37,5 +37,32 @@ X.head                                          # Shows the head of the dataset
 ## Building models
 ```Python
 from sklearn.tree import DecisionTreeRegressor  # Import scikit-learn
+# Define model. Specify a number for random_state to ensure same results each run
+raw_data_model = DecisionTreeRegressor(random_state=1)
 raw_data_model.fit(X,y)
+```
+
+## 4. Model Validation
+A simple metric to evaluate the accuracy of the predictive system is the mean absolute
+error(MAE). The mean absolute error of a model on a fitted data would yield a lower
+error than the actual error on a new dataset. Hence to evaluate the actual MAE,
+a part of the training dataset can be kept aside as validation dataset. After training
+the model on training dataset, the MAE has to be evaluated based on the validation dataset.
+
+```Python
+from sklearn.model_selection import train_test_split
+
+# split data into training and validation data, for both features and target
+# The split is based on a random number generator. Supplying a numeric value to
+# the random_state argument guarantees we get the same split every time we
+# run this script.
+train_X, val_X, train_y, val_y = train_test_split(X, y, random_state = 0)
+# Define model
+raw_data_model = DecisionTreeRegressor()
+# Fit model
+raw_data_model.fit(train_X, train_y)
+
+# get predicted prices on validation data
+val_predictions = raw_data_model.predict(val_X)
+print(mean_absolute_error(val_y, val_predictions))
 ```
