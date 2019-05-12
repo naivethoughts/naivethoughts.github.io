@@ -21,5 +21,21 @@ Pandas library, is used as the primary tool to explore data.
 import pandas as pd
 filePath = '../raw_data.csv'
 raw_data = pd.read_csv(filePath)
-raw_data.describe()
+raw_data.describe()                             # Describe statistics of data
+```
+
+## 3. Select data for modeling
+```Python
+raw_data.columns                                # Describe the columns of data
+raw_data.dropna(axis=0)                         # Drops the data not available
+features = ['abc','def','ghi' ... 'xyz']        # Select features
+X = raw_data[features]
+y = raw_data['xyz']
+X.describe
+X.head                                          # Shows the head of the dataset
+```
+## Building models
+```Python
+from sklearn.tree import DecisionTreeRegressor  # Import scikit-learn
+raw_data_model.fit(X,y)
 ```
