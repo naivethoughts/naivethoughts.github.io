@@ -66,3 +66,37 @@ raw_data_model.fit(train_X, train_y)
 val_predictions = raw_data_model.predict(val_X)
 print(mean_absolute_error(val_y, val_predictions))
 ```
+
+## 5. Underfitting and Overfitting
+The accuracy of predictive capability of a model depends on the number of splits.
+However, if there are more number of splits, there will not be enough data points
+ in each final bin. The each splits represents a relevant pattern associated with
+ the data, and hence more splits results in capturing spurious patterns. Therefore,
+ we need to have optimal number of splits.
+
+ Less number of splits results in not capturing relevant patterns, results in
+ underfitting. The mean, also known as bias, for such a model is quite high and
+ results in a large deviation of predicted value from the actual value on a
+ consistent basis. Such a situation can be mitigated by, including more features
+ or using a higher order fit.
+
+ More number of splits results in capturing spurious patterns, resulting in
+ overfitting. The variance of the model is quite high, such a situation can be
+ alleviated by training on more data.
+
+ ```Python
+ from sklearn.metrics import mean_absolute_error
+ from sklearn.tree import DecisionTreeRegressor
+
+ def get_mae(max_leaf_nodes, train_X, val_X, train_y, val_y):
+     model = DecisionTreeRegressor(max_leaf_nodes=max_leaf_nodes, random_state=0)
+     model.fit(train_X, train_y)
+     preds_val = model.predict(val_X)
+     mae = mean_absolute_error(val_y, preds_val)
+     return(mae)
+
+# compare MAE with differing values of max_leaf_nodes
+for max_leaf_nodes in [5, 50, 500, 5000]:
+   my_mae = get_mae(max_leaf_nodes, train_X, val_X, train_y, val_y)
+         print("Max leaf nodes: %d  \t\t Mean Absolute Error:  %d" %(max_leaf_nodes, my_mae))
+ ```
