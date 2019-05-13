@@ -3,7 +3,7 @@ layout: post
 title: "Machine Learning Microcourse - Kaggle"
 date: 2019-05-10
 excerpt: "Notes on machine learning microcourse from Kaggle"
-tags: [Machine-Learning, Python]
+tags: [Machine-Learning, Python, scikit-learn]
 comments: false
 codes: true
 ---
