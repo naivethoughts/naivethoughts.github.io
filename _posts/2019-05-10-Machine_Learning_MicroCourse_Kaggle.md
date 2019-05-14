@@ -115,7 +115,7 @@ final_model.fit(X,y)
  validation data, for any trained model. Hence we improve the model further by using all
  the data.
 
- ## 6. Random Forests
+## 6. Random Forests
  The predictive accuracy can be improved by using multiple decision trees instead of a
  single decision tree. Random forest uses multiple decision trees, and averages the
  predictions of each component tree.
