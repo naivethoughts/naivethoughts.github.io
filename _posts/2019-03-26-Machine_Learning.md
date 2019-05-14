@@ -10,6 +10,15 @@ codes: true
 
 Last updated : 05/06/2019
 
+# Lectures
+
+## Lecture 1
+`$$\begin{vmatrix}a & b\\
+c & d
+\end{vmatrix}=ad-bc$$`
+
+# Programming Assignments
+
 ## Programming Assignment 1 :
 
 <a class="btn btn-danger" href="{{ site.url }}/codes/machine-learning-ex1.zip"> Linear Regression  </a>
