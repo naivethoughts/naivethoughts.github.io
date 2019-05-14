@@ -13,9 +13,8 @@ Last updated : 05/06/2019
 # Lectures
 
 ## Lecture 1
-`$$\begin{vmatrix}a & b\\
-c & d
-\end{vmatrix}=ad-bc$$`
+Here is an example MathJax inline rendering \\( 1/x^{2} \\), and here is a block rendering:
+\\[ \frac{1}{n^{2}} \\]
 
 # Programming Assignments
 
