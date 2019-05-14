@@ -3,7 +3,7 @@ layout: post
 title: "Neural Network - Coursera, deeplearning.ai"
 date: 2019-05-13
 excerpt: "Neural Networks, Course #1 from deeplearning.ai"
-tags: [Machine-Learning, Matlab, Neural Network]
+tags: [Machine-Learning, Python, Neural Network]
 comments: false
 codes: true
 ---
@@ -17,7 +17,8 @@ neural network model assigns a weight to each of the parameter, based on the ava
 training data. The weights, thus assigned, are used to make new predictions.
 ### Lecture 2 : Supervised Learning with a neural network
 Data come across in the form of structured data (tables,matrices etc.) and unstructured
-data(images, sounds etc.).
+data(images, sounds etc.). Machines were traditionally exceptional in handling structured data,
+and humans in unstructured data.
 ### Lecture 3 : Why is deep learning taking off?
 * Data : Large sets of labeled data due to digitization of the economy.
 * Computation : Leaps in computational power, enabling deeper networks and more hidden layers.
