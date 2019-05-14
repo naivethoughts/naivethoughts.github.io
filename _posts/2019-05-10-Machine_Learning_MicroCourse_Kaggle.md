@@ -13,6 +13,7 @@ Last updated : 05/10/2019
 The accuracy of final decision (leaf) depends on capturing and comparing crucial
 features/characteristics (splits based on training dataset) of the data
 under examination.
+:wq
 
 ## 2. Basic Data Exploration
 Pandas library, is used as the primary tool to explore data.
@@ -24,6 +25,7 @@ raw_data = pd.read_csv(filePath)
 raw_data.describe()                             # Describe statistics of data
 ```
 
+
 ## 3. Select data for modeling
 ```Python
 raw_data.columns                                # Describe the columns of data
@@ -34,6 +36,8 @@ y = raw_data['xyz']
 X.describe
 X.head                                          # Shows the head of the dataset
 ```
+
+
 ## Building models
 ```Python
 from sklearn.tree import DecisionTreeRegressor  # Import scikit-learn
@@ -41,6 +45,7 @@ from sklearn.tree import DecisionTreeRegressor  # Import scikit-learn
 raw_data_model = DecisionTreeRegressor(random_state=1)
 raw_data_model.fit(X,y)
 ```
+
 
 ## 4. Model Validation
 A simple metric to evaluate the accuracy of the predictive system is the mean absolute
@@ -67,28 +72,29 @@ val_predictions = raw_data_model.predict(val_X)
 print(mean_absolute_error(val_y, val_predictions))
 ```
 
+
 ## 5. Underfitting and Overfitting
 The accuracy of predictive capability of a model depends on the number of splits.
 However, if there are more number of splits, there will not be enough data points
- in each final bin. The each splits represents a relevant pattern associated with
- the data, and hence more splits results in capturing spurious patterns. Therefore,
- we need to have optimal number of splits.
+in each final bin. The each splits represents a relevant pattern associated with
+the data, and hence more splits results in capturing spurious patterns. Therefore,
+we need to have optimal number of splits.
 
- Less number of splits results in not capturing relevant patterns, results in
- underfitting. The mean, also known as bias, for such a model is quite high and
- results in a large deviation of predicted value from the actual value on a
- consistent basis. Such a situation can be mitigated by, including more features
- or using a higher order fit.
+Less number of splits results in not capturing relevant patterns, results in
+underfitting. The mean, also known as bias, for such a model is quite high and
+results in a large deviation of predicted value from the actual value on a
+consistent basis. Such a situation can be mitigated by, including more features
+or using a higher order fit.
 
- More number of splits results in capturing spurious patterns, resulting in
- overfitting. The variance of the model is quite high, such a situation can be
- alleviated by training on more data.
+More number of splits results in capturing spurious patterns, resulting in
+overfitting. The variance of the model is quite high, such a situation can be
+alleviated by training on more data.
 
  ```Python
- from sklearn.metrics import mean_absolute_error
- from sklearn.tree import DecisionTreeRegressor
+from sklearn.metrics import mean_absolute_error
+from sklearn.tree import DecisionTreeRegressor
 
- def get_mae(max_leaf_nodes, train_X, val_X, train_y, val_y):
+def get_mae(max_leaf_nodes, train_X, val_X, train_y, val_y):
      model = DecisionTreeRegressor(max_leaf_nodes=max_leaf_nodes, random_state=0)
      model.fit(train_X, train_y)
      preds_val = model.predict(val_X)
@@ -110,10 +116,12 @@ final_model = DecisionTreeRegressor(max_leaf_nodes=best_tree_size, random_state=
 final_model.fit(X,y)
  ```
 
- Please note, once the maximum leaf nodes is figured out - the accuracy can be improved
- by training with all the data. Since max_leaf_nodes is obtained by minimizing MAE over
- validation data, for any trained model. Hence we improve the model further by using all
- the data.
+Please note, once the maximum leaf nodes is figured out - the accuracy can be improved
+by training with all the data. Since max_leaf_nodes is obtained by minimizing MAE over
+validation data, for any trained model. Hence we improve the model further by using all
+the data.
+
+
 
 ## 6. Random Forests
 
@@ -121,15 +129,15 @@ The predictive accuracy can be improved by using multiple decision trees instead
 single decision tree. Random forest uses multiple decision trees, and averages the
 predictions of each component tree.
 
- ```Python
- from sklearn.ensemble import RandomForestRegressor
+```Python
+from sklearn.ensemble import RandomForestRegressor
 
- # Define the model. Set random_state to 1
- final_model = RandomForestRegressor(random_state = 1)
+# Define the model. Set random_state to 1
+final_model = RandomForestRegressor(random_state = 1)
 
- # fit your model
- final_model.fit(train_X,train_y)
+# fit your model
+final_model.fit(train_X,train_y)
 
- # Calculate the mean absolute error of your Random Forest model on the validation data
- final_val_mae = mean_absolute_error(rf_model.predict(val_X),val_y)
+# Calculate the mean absolute error of your Random Forest model on the validation data
+final_val_mae = mean_absolute_error(rf_model.predict(val_X),val_y)
 ```
