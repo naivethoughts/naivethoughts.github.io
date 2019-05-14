@@ -13,7 +13,7 @@ Last updated : 05/06/2019
 # Lectures
 
 ## Lecture 1
-\\( Sigma \\)
+\\($\sum_{n=1}^{\infty}$ \\)
 
 # Programming Assignments
 
