@@ -113,4 +113,22 @@ final_model.fit(X,y)
  Please note, once the maximum leaf nodes is figured out - the accuracy can be improved
  by training with all the data. Since max_leaf_nodes is obtained by minimizing MAE over
  validation data, for any trained model. Hence we improve the model further by using all
- the data. 
+ the data.
+
+ ## 6. Random Forests
+ The predictive accuracy can be improved by using multiple decision trees instead of a
+ single decision tree. Random forest uses multiple decision trees, and averages the
+ predictions of each component tree.
+
+ ```Python
+ from sklearn.ensemble import RandomForestRegressor
+
+ # Define the model. Set random_state to 1
+ final_model = RandomForestRegressor(random_state = 1)
+
+ # fit your model
+ final_model.fit(train_X,train_y)
+
+ # Calculate the mean absolute error of your Random Forest model on the validation data
+ final_val_mae = mean_absolute_error(rf_model.predict(val_X),val_y)
+```
