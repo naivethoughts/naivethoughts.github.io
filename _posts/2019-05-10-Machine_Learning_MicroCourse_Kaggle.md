@@ -116,9 +116,10 @@ final_model.fit(X,y)
  the data.
 
 ## 6. Random Forests
- The predictive accuracy can be improved by using multiple decision trees instead of a
- single decision tree. Random forest uses multiple decision trees, and averages the
- predictions of each component tree.
+
+The predictive accuracy can be improved by using multiple decision trees instead of a
+single decision tree. Random forest uses multiple decision trees, and averages the
+predictions of each component tree.
 
  ```Python
  from sklearn.ensemble import RandomForestRegressor
