@@ -10,7 +10,7 @@ codes: true
 
 # Lectures
 
-# Week 1 :
+## Week 1 :
 ### Lecture 1 : What is a neural network?
 Predictions(y) by any model depends on several parameters(x1,x2..xn). A well trained
 neural network model assigns a weight to each of the parameter, based on the available
@@ -23,3 +23,16 @@ and humans in unstructured data.
 * Data : Large sets of labeled data due to digitization of the economy.
 * Computation : Leaps in computational power, enabling deeper networks and more hidden layers.
 * Algorithms  : Faster turn around times, reducing the time-lag for iterative improvements.
+
+## Week 2 :
+### Lecture 1 : Binary classification
+For implementation, the $n_x$ feature vectors are unrolled for $m$ training examples,
+stored as columns, for vector X. Correspondingly y is a column vector of size  $1 \times m$.
+
+The shape of any vector can be found by
+```Python
+X.shape
+out : (n$_x$,m)
+y.shape
+out : (1,m)
+```
