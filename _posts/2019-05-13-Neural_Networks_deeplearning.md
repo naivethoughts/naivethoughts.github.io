@@ -36,3 +36,8 @@ out : (n$_x$,m)
 y.shape
 out : (1,m)
 ```
+
+### Lecture 2 : Logistic regression
+We define logistic regression problem as for a given X, what is the probability of y to be 1.
+
+[[ \hat y\,=\,\sigma(w^T X + b)]]
