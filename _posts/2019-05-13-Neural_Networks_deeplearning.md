@@ -39,5 +39,9 @@ out : (1,m)
 
 ### Lecture 2 : Logistic regression
 We define logistic regression problem as for a given X, what is the probability of y to be 1.
-
 \\[ \hat{y} \,=\,\sigma(w^T X + b) \\]
+
+here,
+\\( \sigma(z) \\) is the sigmoid function given by
+
+\\[ \sigma(z)\,=\,\frac{1}{1+exp(-z)} \\]
