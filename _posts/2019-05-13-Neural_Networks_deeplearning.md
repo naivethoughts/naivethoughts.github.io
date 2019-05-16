@@ -53,8 +53,7 @@ To reach a global minima, the logistic regression uses a loss function for a sin
 \\[ \mathcal{L}(\hat{y},y)\,=\, -(y\,log(\hat{y})\,+\,(1-y)\,log(1-\hat{y}))\\]
 
 with \\(0\,\le\,y,\hat{y}\,\le\,1\\). For y = 1, the loss function becomes
-\\(\mathcal{L}(\hat{y},1)\,=\,y\,log(\hat{y})\\) and it reduces to 0 as
-\\(\hat{y}\,\to\,1\\).
+\\(\mathcal{L}(\hat{y},1)\,=\,log(\hat{y})\\) reducing to 0 as \\(\hat{y}\,\to\,1\\).
 
 The cost function, to be minimized, is the average of loss function across all the training examples
 given by,
