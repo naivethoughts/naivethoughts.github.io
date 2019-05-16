@@ -43,5 +43,6 @@ We define logistic regression problem as for a given X, what is the probability 
 
 here,
 \\( \sigma(z) \\) is the sigmoid function given by
-
 \\[ \sigma(z)\,=\,\frac{1}{1+exp(-z)} \\]
+
+b can be thought of as \\( \theta_0 \\), similar to the ML course. Unlike ML b is treated separately. 
