@@ -53,5 +53,4 @@ To reach a global minima, the logistic regression uses a loss function for a sin
 
 and for the entire training examples, the cost function is defined as
 
-\\[ J(w,b)\,=\,-\frac{1}{m}\,\sum_{1}_{m} \\]
-\\[ \mathcal{L}(\hat{y}^i,y^i) \\]
+\\[ J(w,b)\,=\,-\frac{1}{m}\,\sum_{i=1}^m\,\mathcal{L}(\hat{y}^i,y^i) \\]
