@@ -32,10 +32,12 @@ stored as columns, for vector X. Correspondingly y is a column vector of size  \
 The shape of any vector can be found by
 ```Python
 X.shape
-out : (n\\(_x)\\,m)
-y.shape
-out : (1,m)
 ```
+out : (\\(n_x\\),m)
+```Python
+y.shape
+```
+out : (1,m)
 
 ### Lecture 2 : Logistic regression
 We define logistic regression problem as for a given X, what is the probability of y to be 1.
