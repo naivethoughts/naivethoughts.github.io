@@ -26,13 +26,13 @@ and humans in unstructured data.
 
 ## Week 2 :
 ### Lecture 1 : Binary classification
-For implementation, the \\(n_x)\\ feature vectors are unrolled for \\(m)\\ training examples,
-stored as columns, for vector X. Correspondingly y is a column vector of size  \\(1 \times m)\\.
+For implementation, the \\( n_x \\) feature vectors are unrolled for \\( m \\) training examples,
+stored as columns, for vector X. Correspondingly y is a column vector of size  \\( 1 \times m \\).
 
 The shape of any vector can be found by
 ```Python
 X.shape
-out : (n$_x$,m)
+out : (n\\(_x)\\,m)
 y.shape
 out : (1,m)
 ```
