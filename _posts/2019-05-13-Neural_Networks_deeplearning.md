@@ -39,10 +39,19 @@ out : (1,m)
 
 ### Lecture 2 : Logistic regression
 We define logistic regression problem as for a given X, what is the probability of y to be 1.
-\\[ \hat{y} \,=\,\sigma(w^T X + b) \\]
+\\[ \hat{y} \,=\,\sigma(w^T x + b) \\]
 
 here,
 \\( \sigma(z) \\) is the sigmoid function given by
 \\[ \sigma(z)\,=\,\frac{1}{1+exp(-z)} \\]
 
-b can be thought of as \\( \theta_0 \\), similar to the ML course. Unlike ML b is treated separately. 
+b can be thought of as \\( \theta_0 \\), similar to the ML course. Unlike ML b is treated separately.
+
+### Lecture 3 : Logistic regression : Cost function
+To reach a global minima, the logistic regression uses a loss function for a single training example of the form,
+\\[ \mathcal(L)\,=\, -(y\,log(\hat{y})\,+\,(1-y)\,log(1-\hat{y}))\\]
+
+and for the entire training examples, the cost function is defined as
+{% highlight css %}
+\\[ J(w,b)\,=\,\frac{-1}{m} \sum_{1}_{m} \mathcal(L)(\hat{y}^i,y^i) \\]
+{% endhighlight %}
