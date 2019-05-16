@@ -49,8 +49,14 @@ b can be thought of as \\( \theta_0 \\), similar to ML course. Unlike ML, b is t
 
 ### Lecture 3 : Logistic regression : Cost function
 To reach a global minima, the logistic regression uses a loss function for a single training example of the form,
+
 \\[ \mathcal{L}(\hat{y},y)\,=\, -(y\,log(\hat{y})\,+\,(1-y)\,log(1-\hat{y}))\\]
 
-and for the entire training examples, the cost function is defined as
+with \\(0\,\le\,y,\hat{y}\,\le\,1\\). For y = 1, the loss function becomes
+\\(\mathcal{L}(\hat{y},1)\,=\,y\,log(\hat{y})\\) and it reduces to 0 as
+\\(\hat{y}\,\to\,1\\).
+
+The cost function, to be minimized, is the average of loss function across all the training examples
+given by,
 
 \\[ J(w,b)\,=\,-\frac{1}{m}\,\sum_{i=1}^m\,\mathcal{L}(\hat{y}^i,y^i) \\]
