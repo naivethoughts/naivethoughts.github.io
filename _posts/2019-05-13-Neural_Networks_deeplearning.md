@@ -45,13 +45,12 @@ here,
 \\( \sigma(z) \\) is the sigmoid function given by
 \\[ \sigma(z)\,=\,\frac{1}{1+exp(-z)} \\]
 
-b can be thought of as \\( \theta_0 \\), similar to the ML course. Unlike ML b is treated separately.
+b can be thought of as \\( \theta_0 \\), similar to ML course. Unlike ML, b is treated separately.
 
 ### Lecture 3 : Logistic regression : Cost function
 To reach a global minima, the logistic regression uses a loss function for a single training example of the form,
 \\[ \mathcal(L)\,=\, -(y\,log(\hat{y})\,+\,(1-y)\,log(1-\hat{y}))\\]
 
 and for the entire training examples, the cost function is defined as
-{% highlight css %}
-\\[ J(w,b)\,=\,\frac{-1}{m} \sum_{1}_{m} \mathcal(L)(\hat{y}^i,y^i) \\]
-{% endhighlight %}
+
+### \\[ J(w,b)\,=\,\frac{-1}{m} \sum_{1}_{m} \mathcal(L)(\hat{y}^i,y^i) \\]
