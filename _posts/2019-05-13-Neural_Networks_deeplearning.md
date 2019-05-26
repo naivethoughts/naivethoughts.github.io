@@ -61,3 +61,12 @@ The cost function, to be minimized, is the average of loss function across all t
 given by,
 
 \\[ J(w,b)\,=\,-\frac{1}{m}\,\sum_{i=1}^m\,\mathcal{L}(\hat{y}^i,y^i) \\]
+
+### Lecture 4 : Gradient Descent
+
+In order to minimize the cost function \\( J(w,b) \\), gradient descent algorithm is used. To determine the direction of the
+next update of \\( w \\),
+
+\\[ w\,=\,w\,-\,\alpha\frac{\partial J}{\partial w} \\]
+
+the above update is applied repeatedly till the value of \\( w \\) converges.
