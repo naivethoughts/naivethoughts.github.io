@@ -70,3 +70,25 @@ next update of \\( w \\),
 \\[ w\,=\,w\,-\,\alpha\frac{\partial J}{\partial w} \\]
 
 the above update is applied repeatedly till the value of \\( w \\) converges.
+
+### Lecture 9 : Logistic Regression : Gradient descent
+
+\\[ \mathcal{L}(a,y)\,=\, -(y\,log(a)\,+\,(1-y)\,log(1-a))\\]
+
+Derivative with respect to a, would be
+
+\\[ \frac{\partial \mathcal{L}}{\partial a}\,=\,\frac{-y}{a}\,+\,\frac{1-y}{1-a}\\]
+
+Shows the change in loss function with respect to \\( \hat{y} \\) or \\( a \\). Now let us look into the derivative of z,
+
+\\[ \frac{\partial a}{\partial z}\,=\,\frac{exp(-z)}{(1+exp(-z))^2}\\]
+\\[ \frac{\partial a}{\partial z}\,=\,a\times(1-a)\\]
+
+Therefore \\(dz\,=\,\frac{\partial \mathcal{L}}{\partial a}\frac{\partial a}{\partial z}\\),
+
+\\[dz\,=\,a\,-\,y]
+
+and the variables are updated as
+
+\\[ w_i\,=\,w_i\,-\,\alpha\,x_i\, dz\\]
+\\[ b_i\,=\,b_i\,-\,\alpha dz\\]
