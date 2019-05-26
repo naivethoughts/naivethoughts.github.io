@@ -91,4 +91,4 @@ Therefore \\(dz\,=\,\frac{\partial \mathcal{L}}{\partial a}\frac{\partial a}{\pa
 and the variables are updated as
 
 \\[ w_i\,=\,w_i\,-\,\alpha\,x_i\, dz\\]
-\\[ b_i\,=\,b_i\,-\,\alpha dz\\]
+\\[ b_i\,=\,b_i\,-\,\alpha\,dz\\]
