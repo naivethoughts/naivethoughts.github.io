@@ -86,7 +86,7 @@ Shows the change in loss function with respect to \\( \hat{y} \\) or \\( a \\). 
 
 Therefore \\(dz\,=\,\frac{\partial \mathcal{L}}{\partial a}\frac{\partial a}{\partial z}\\),
 
-\\[dz\,=\,a\,-\,y]
+\\[dz\,=\,a\,-\,y\\]
 
 and the variables are updated as
 
