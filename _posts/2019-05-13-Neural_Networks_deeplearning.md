@@ -62,6 +62,13 @@ given by,
 
 \\[ J(w,b)\,=\,-\frac{1}{m}\,\sum_{i=1}^m\,\mathcal{L}(\hat{y}^i,y^i) \\]
 
+If we define \\( \hat{y}\,=\,P(y=1|x) \\), that is \\( \hat{y} \\) is the probability that y = 1 for given features X. or
+\\[ P(y=1|x)\,=\,\hat{y} \\]
+\\[ P(y=0|x)]\,=\,1\,-\,\hat{y} \\]
+This can be succinctly written as,
+\\[ P(y|x)\,=\,\hat{y}^{y}(1-\hat{y})^{1-y} \\]
+Taking a log on either side, would yield the cost function. The negative sign comes from the principle of maximum likelihood estimation and the scaling of \\(1/m\\) is multiplied for better convergence. 
+
 ### Lecture 4 : Gradient Descent
 
 In order to minimize the cost function \\( J(w,b) \\), gradient descent algorithm is used. To determine the direction of the
@@ -92,3 +99,28 @@ and the variables are updated as
 
 \\[ w_i\,=\,w_i\,-\,\alpha\,x_i\, dz\\]
 \\[ b_i\,=\,b_i\,-\,\alpha\,dz\\]
+
+### Lecture 10,15 : Logistic Regression : Gradient descent for m training examples
+
+The vectorized implementation for logstic regression problem with m training examples is described below.
+
+```Python
+import numpy as np
+
+for iter in range(1000) :
+  Z = np.dot(w.T,X) + b
+  A = sigmoid(Z)
+  dZ = A - Y
+  dW = (X*dZ.T)/m
+  dB = np.sum(dZ)/m
+  W = W - alpha*dW
+  B = B - alpha*dB
+```
+
+### Lecture 11,12,13,14 Vectorization, Broadcasting, Python/Numpy Vectors
+
+* Avoid for loops, and whenever possible vectorize the code to take advantage of efficient parallelization of the language in CPUs and GPUs.
+* Numpy has mathematical functions that can help in vectorization of the code.
+* Broadcasting, works analogously to bsxfun in matlab and octave. For any addition, subtraction, multiplication and division operation of an (m,n) matrix with a second matrix, the second matrix is copied in m rows if the matrix is of the size (1,n) and n columns if the second matrix is of the size (m,1). Thus the second matrix is of the size (m,n) and the operation is performed.
+* For easy readability and less bugs, assertain the size of matrix being operated on.
+* Ensure the variable is a matrix not a rank 1 array.
