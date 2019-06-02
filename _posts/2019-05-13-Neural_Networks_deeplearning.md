@@ -150,8 +150,27 @@ The tanh function has values from -1 to 1, with a mean at 0 for \\(z\,=\,0.0\\).
 
 #### RELU & Leaky RELU
 \\[ RELU(z)\,=\,max(0,z)\\]
-\\[ RELU^\prime(z)\,=\,0 or 1 \\]
+\\[ RELU^\prime(z)\,=\,0\,or\,1 \\]
 
-\\[ Leaky_RELU(z)\,=\,max(kz,z) \\]
-\\[ Leaky_RELU^\prime(z)\,=\,k or 1 \\]
-with \\( 0\,\lt\,k\lt1 )\\
+\\[ Leaky\,RELU(z)\,=\,max(kz,z) \\]
+\\[ Leaky\,RELU^\prime(z)\,=\,k\,or\,1 \\]
+with \\( 0\,\lt\,k\lt1 \\)
+
+The training of the system consists of two steps, forward propogation in which the output layer values are calculated based on weights of different nodes across different layers. For the forward propogation consider the schematic shown above,
+* Input layer features : 3
+* Hidden layers : 2
+* Hidden layer 1, nodes : 4
+* Hidden layer 2, nodes : 4
+* Output layer nodes : 1
+To calculate the activation value of the first node in hidden layer 1 from activation function g(z), z has to be calculated. Each of the three input features from the input layer are scaled using three corresponding weights (w) and offset using (b), and the z value thus obtained is fed into the activation function. This process is repeated for the four nodes in the hidden layer 1, thus we end up with a weight matrix of the size (4,3) and an offset matrix of size (4,1). The above mentioned process when applied to the second hidden layer yields a weight matrix of the size (4,4) and an offset matrix of the size (4,1). For the output layer, the weight matrix is of the size (1,4) and the offset matrix has the size (1,1). From the final activation function, the output value is obtained for the weights in the hidden layer.
+
+The second step in the training of a neural network is the backward propogation. This step assumes the activation functions to be differentiable and using the chain rule backward propogation step determine the direction in which weights and offsets has to be shifted to reduce the cost function.
+
+### Vectoized Algorithm
+#### Forward propogation
+\\[Z^{[1]}\,=\,W^{[1]}X\,+\,b^{[1]}\\]
+\\[A^{[1]}\,=\,g(Z^{[1]})\\]
+\\[Z^{[2]}\,=\,W^{[2]}A^{[1]}\,+\,b^{[2]}\\]
+\\[A^{[2]}\,=\,g(Z^{[2]})\\]
+\\[Z^{[3]}\,=\,W^{[3]}A^{[2]}\,+\,b^{[3]}\\]
+\\[A^{[3]}\,=\,g(Z^{[3]})\\]
