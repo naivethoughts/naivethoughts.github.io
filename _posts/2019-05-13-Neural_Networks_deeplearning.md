@@ -136,9 +136,11 @@ for iter in range(1000) :
 
 The figure above represents a shallow neural network of three layers, with two hidden layers and one output layer. A mental picture to understand the working of a neural network is to imagine two coloured papers crumbled together, and neural network uncrumbles the paper ball to extract two distinct colored papers. In order to extract distinct outputs, the hidden layers implement various logical gates identifying similar characteristics of the inputs leading to the same output. The logical gates are implemented in the hidden layers via non linear activation functions, whereas linear activation functions would only scale the input parameters.
 
-The hidden layer nodes and weights are initialized with random values close to zero, the random values are essential to ensure different nodes in each layer result in different gates. Thus, random value initialization for different weights is required for symmetry breaking ensuring different logical gates. The weights has to be initialized close to zero, since the activation functions : sigmoid and hyperbolic tangent (tanh) tend to saturate at very high and low weights making the learning extremely slow. The mathematical form of widely used activation function are described below.
+The hidden layer nodes and weights are initialized with random values close to zero, the random values are essential to ensure different nodes in each layer result in different gates. Thus, random value initialization for different weights is required for symmetry breaking ensuring different logical gates. The weights has to be initialized close to zero, since the activation functions : sigmoid and hyperbolic tangent (tanh) tend to saturate at very high and low weights making the learning extremely slow. Mathematical forms of widely used activation function are described below.
 
 #### Sigmoid function :
-\\[ \sigma(z)\,=\,\frac{1}{1\,+\,exp(-z)}\\]
-\\[ \sigma'(z)\,=\,\sigma(z)(1\,-\,sigma(z))]
-The function yields values in the range of 0 to 1, centered at 0.5 for \\(z\,=\,0.0\\). This function is suitable for
+\\[ \sigma(z)\,=\,\frac{1}{1\,+\,exp(-z)} \\]
+\\[ \sigma^\prime(z)\,=\,\sigma(z)(1\,-\,sigma(z)) \\]
+The function yields values in the range of 0 to 1, centered at 0.5 for \\(z\,=\,0.0\\). This function has slow learning rates for low and high values of z, the learning rates improve for values close to zero. The sigmoid function is more suited for the output layer activation of binary classification problem.
+
+#### Hyperbolic tangent function :
