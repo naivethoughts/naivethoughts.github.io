@@ -130,8 +130,9 @@ for iter in range(1000) :
 ### Lecture 1 - 10 Neural Network Basics
 
 <figure>
-	<img src="{{ site.url }}//_posts/images/Neural_Network.png">
-	<figcaption>Neural network representation</figcaption>
+	<img src="{{ site.url }}/_posts/images/Neural_Network.png">
+	<figcaption>Neural network representation 4</figcaption>
 </figure>
 
 The figure above represents a shallow neural network of three layers, with two hidden layers and one output layer.
+A mental picture to understand the working of a neural network is to imagine two coloured papers crumbled together, and neural network uncrumbles the paper
