@@ -194,14 +194,14 @@ The second step in the training of a neural network is the backward propagation.
 Deep neural networks consists of multiple layers, with multiple activation nodes, processing the input features to generate the output. In a naive sense, progressively the hidden layers extract and synthesis complex attributes from the input layer features. For example for a photo of a face, the first few layers might remove the background noise and extract edges, the next few layers extract the facial features, from the facial features thus extracted next layers might recompose and detect the face. Furthermore, deep learning ensures the number of nodes required to represent a complex logical gate are reduced to \\(O(log(n))\\) from \\(2^{n-1}\\) for a single layered neural network.
 
 <figure>
-	<img src="{{ site.url }}/images/Forward_Backward_propagation.jpeg">
+	<img src="{{ site.url }}/images/Forward_Backward_propagation.JPG">
 	<figcaption> Schematic forward and backward propagation. (Source: Course Slide)</figcaption>
 </figure>
 
-Any layer, in a deep neural network, can be thought of as a block which takes in activation from \\(A_{l-1}\\) as input and is operated upon by \\(W_l, b_l\\) to form \\(z_l\\) acted on by activation function \\(g_l\\) to produced the output \\(A_{l}\\) passed on to the next block. In the backward propagation step, \\(dA_{l}\\) is the input producing the output of \\(dA_{l-1}\\), and in the process it requires cached \\(z_l, W_l, b_l\\) from forward propagation. The update for the weights \\(dW_l\\) and \\(db_l\\) are calculated in this backward propagation.
+Any layer, in a deep neural network, can be thought of as a block which takes in activation from \\(A_{l-1}\\) as input and is operated upon by \\(W_l,\,b_l\\) to form \\(z_l\\) acted on by activation function \\(g_l\\) to produced the output \\(A_{l}\\) passed on to the next block. In the backward propagation step, \\(dA_{l}\\) is the input producing the output of \\(dA_{l-1}\\), and in the process it requires cached \\(z_l,\,W_l,\,b_l\\) from forward propagation. The update for the weights \\(dW_l\\) and \\(db_l\\) are calculated in this backward propagation.
 
-From the discussions above, it is clear that the parameters controlling the efficiency of the neural networks are weights and offsets, \\(W_l\,\&\,b_l). However, the values of these parameters depends on hyperparameters such as :
-* Learning rate, \\(\alpha\)
+From the discussions above, it is clear that the parameters controlling the efficiency of the neural networks are weights and offsets, \\(W_l\,\&\,b_l\\). However, the values of these parameters depends on hyperparameters such as :
+* Learning rate, \\(\alpha\\)
 * \# iterations
 * \# hidden layers
 * \# hidden nodes per layers (units)
