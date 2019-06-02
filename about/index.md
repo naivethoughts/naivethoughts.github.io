@@ -24,13 +24,13 @@ reader and I believe this blog can be a good platform for that.
 Secondly, during the course of my PhD - I have realized, there are poorly
 written tools popping up as the top Google search results for several problems
 related to fluid dynamics or rather basic statistics. Hence, I had to struggle a
-lot to differentiate between good and bad code. (*Someone can bin my code can
-also as bad*). Therefore, I also want to share the simple tools - developed by
+lot to differentiate between good and bad code. (*Someone might classify my code
+to be bad*). Therefore, I also want to share the simple tools - developed by
 me based on several other codes to serve as a general guideline to novice
 programmers.
 > Most of the codes are in Matlab and uses inbuilt functions - Hence, I am working
 on a python version of these codes and will be uploding after testing. Please
-feel free to contact me via mail - if you have any suggestions or corner cases.
+feel free to contact me via [mail](subint@mtu.edu) - if you have any suggestions or corner cases.
 
 Though I could have used a blogspot for the same purpose, I found the ads quite
 distracting. Furthermore, I was inclined to learn about building and hosting

@@ -124,3 +124,12 @@ for iter in range(1000) :
 * Broadcasting, works analogously to bsxfun in matlab and octave. For any addition, subtraction, multiplication and division operation of an (m,n) matrix with a second matrix, the second matrix is copied in m rows if the matrix is of the size (1,n) and n columns if the second matrix is of the size (m,1). Thus the second matrix is of the size (m,n) and the operation is performed.
 * For easy readability and less bugs, assertain the size of matrix being operated on.
 * Ensure the variable is a matrix not a rank 1 array.
+
+## Week 3 :
+
+### Lecture 1 - 10 Neural Network Basics
+
+<figure>
+	<img src="/images/Neural_Network.png">
+	<figcaption>Neural network representation</figcaption>
+</figure>
