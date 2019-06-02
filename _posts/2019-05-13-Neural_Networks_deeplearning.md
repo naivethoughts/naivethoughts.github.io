@@ -130,8 +130,10 @@ for iter in range(1000) :
 ### Lecture 1 - 10 Neural Network Basics
 
 <figure>
-	<img src="{{ site.url }}/_posts/images/Neural_Network">
+	<img src="{{ site.url }}/codes/Neural_Network.png">
 	<figcaption>Neural network representation 4</figcaption>
 </figure>
 
-The figure above represents a shallow neural network of three layers, with two hidden layers and one output layer. A mental picture to understand the working of a neural network is to imagine two coloured papers crumbled together, and neural network uncrumbles the paper ball to extract two distinct colored papers. In order to extract distinct outputs, the hidden layers implement various logical gates identifying similar characteristics of the inputs leading to the same output. The hidden layer nodes have activation 
+The figure above represents a shallow neural network of three layers, with two hidden layers and one output layer. A mental picture to understand the working of a neural network is to imagine two coloured papers crumbled together, and neural network uncrumbles the paper ball to extract two distinct colored papers. In order to extract distinct outputs, the hidden layers implement various logical gates identifying similar characteristics of the inputs leading to the same output. The logical gates are implemented in the hidden layers via non linear activation functions, whereas linear activation functions would only scale the input parameters.
+
+The hidden layer nodes and weights are initialized with random values close to zero, the random values are essential to ensure different nodes in each layer result in different gates. Thus, random value initialization for different weights is required for symmetry breaking ensuring different logical gates. The weights has to be initialized close to zero, since the activation functions : sigmoid and hyperbolic tangent (tanh) tend to saturate at very high and low weights making the learning extremely slow. The mathematical form of widely used activation function are described below.
