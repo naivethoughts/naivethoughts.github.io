@@ -180,10 +180,10 @@ The second step in the training of a neural network is the backward propogation.
 \\[dW^{[3]}\,=\,dZ^{[3]}(A^{[2]})^\prime\\]
 \\[db^{[3]}\,=\,dZ^{[3]}\\]
 
-\\[dZ^{[2]}\,=\,(W^{[2]})^\prime dz^{[2]}*g^\prime(Z^[2])\\]
+\\[dZ^{[2]}\,=\,(W^{[2]})^\prime dz^{[2]}*g^\prime(Z^{[2]})\\]
 \\[dW^{[2]}\,=\,dZ^{[2]}(A^{[1]})^\prime\\]
 \\[db^{[2]}\,=\,dZ^{[2]}\\]
 
-\\[dZ^{[1]}\,=\,(W^{[1]})^\prime dz^{[1]}*g^\prime(Z^[1])\\]
+\\[dZ^{[1]}\,=\,(W^{[1]})^\prime dz^{[1]}*g^\prime(Z^{[1]})\\]
 \\[dW^{[1]}\,=\,dZ^{[1]}(X)^\prime\\]
 \\[db^{[1]}\,=\,dZ^{[1]}\\]
