@@ -140,9 +140,18 @@ The hidden layer nodes and weights are initialized with random values close to z
 
 #### Sigmoid function :
 \\[ \sigma(z)\,=\,\frac{1}{1\,+\,exp(-z)} \\]
-\\[ \sigma^\prime(z)\,=\,\sigma(z)(1\,-\,sigma(z)) \\]
+\\[ \sigma^\prime(z)\,=\,\sigma(z)(1\,-\,\sigma(z)) \\]
 The function yields values in the range of 0 to 1, centered at 0.5 for \\(z\,=\,0.0\\). This function has slow learning rates for low and high values of z, the learning rates improve for values close to zero. The sigmoid function is more suited for the output layer activation of binary classification problem.
 
 #### Hyperbolic tangent function :
 \\[ tanh(z)\,=\,\frac{exp(z)\,-\,exp(-z)}{exp(z)\,+\,exp(-z)}\\]
-\\[ tanh^\prime(z)\,=\,\frac{exp(z)\,-\,exp(-z)}{exp(z)\,+\,exp(-z)}\\]
+\\[ tanh^\prime(z)\,=\,(1\,-\,tanh(z)^2)\\]
+The tanh function has values from -1 to 1, with a mean at 0 for \\(z\,=\,0.0\\). This function has better learning rates and hence preferred over sigmoid activation function.
+
+#### RELU & Leaky RELU
+\\[ RELU(z)\,=\,max(0,z)\\]
+\\[ RELU^\prime(z)\,=\,0 or 1 \\]
+
+\\[ Leaky_RELU(z)\,=\,max(kz,z) \\]
+\\[ Leaky_RELU^\prime(z)\,=\,k or 1 \\]
+with \\( 0\,\lt\,k\lt1 )\\
