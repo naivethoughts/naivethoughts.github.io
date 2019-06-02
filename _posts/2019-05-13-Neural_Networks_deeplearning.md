@@ -7,6 +7,7 @@ tags: [Machine-Learning, Python, Neural Network]
 comments: false
 codes: true
 ---
+Last updated : 06/02/2019
 
 # Lectures
 
@@ -156,7 +157,7 @@ The tanh function has values from -1 to 1, with a mean at 0 for \\(z\,=\,0.0\\).
 \\[ Leaky\,RELU^\prime(z)\,=\,k\,or\,1 \\]
 with \\( 0\,\lt\,k\lt1 \\)
 
-The training of the system consists of two steps, forward propogation in which the output layer values are calculated based on weights of different nodes across different layers. For the forward propogation consider the schematic shown above,
+The training of the system consists of two steps, forward propagation in which the output layer values are calculated based on weights of different nodes across different layers. For the forward propagation consider the schematic shown above,
 * Input layer features : 3
 * Hidden layers : 2
 * Hidden layer 1, nodes : 4
@@ -164,10 +165,10 @@ The training of the system consists of two steps, forward propogation in which t
 * Output layer nodes : 1
 To calculate the activation value of the first node in hidden layer 1 from activation function g(z), z has to be calculated. Each of the three input features from the input layer are scaled using three corresponding weights (w) and offset using (b), and the z value thus obtained is fed into the activation function. This process is repeated for the four nodes in the hidden layer 1, thus we end up with a weight matrix of the size (4,3) and an offset matrix of size (4,1). The above mentioned process when applied to the second hidden layer yields a weight matrix of the size (4,4) and an offset matrix of the size (4,1). For the output layer, the weight matrix is of the size (1,4) and the offset matrix has the size (1,1). From the final activation function, the output value is obtained for the weights in the hidden layer.
 
-The second step in the training of a neural network is the backward propogation. This step assumes the activation functions to be differentiable and using the chain rule backward propogation step determine the direction in which weights and offsets has to be shifted to reduce the cost function.
+The second step in the training of a neural network is the backward propagation. This step assumes the activation functions to be differentiable and using the chain rule backward propagation step determine the direction in which weights and offsets has to be shifted to reduce the cost function.
 
 ### Vectoized Algorithm
-#### Forward propogation
+#### Forward propagation
 \\[Z^{[1]}\,=\,W^{[1]}X\,+\,b^{[1]}\\]
 \\[A^{[1]}\,=\,g(Z^{[1]})\\]
 \\[Z^{[2]}\,=\,W^{[2]}A^{[1]}\,+\,b^{[2]}\\]
@@ -175,7 +176,7 @@ The second step in the training of a neural network is the backward propogation.
 \\[Z^{[3]}\,=\,W^{[3]}A^{[2]}\,+\,b^{[3]}\\]
 \\[A^{[3]}\,=\,g(Z^{[3]})\\]
 
-### Backward propogation
+### Backward propagation
 \\[dZ^{[3]}\,=\,A^{[3]}\,-\,y\\]
 \\[dW^{[3]}\,=\,dZ^{[3]}(A^{[2]})^\prime\\]
 \\[db^{[3]}\,=\,dZ^{[3]}\\]
@@ -187,3 +188,26 @@ The second step in the training of a neural network is the backward propogation.
 \\[dZ^{[1]}\,=\,(W^{[1]})^\prime dz^{[1]}*g^\prime(Z^{[1]})\\]
 \\[dW^{[1]}\,=\,dZ^{[1]}(X)^\prime\\]
 \\[db^{[1]}\,=\,dZ^{[1]}\\]
+
+## Week 4 : Deep Neural networks
+
+Deep neural networks consists of multiple layers, with multiple activation nodes, processing the input features to generate the output. In a naive sense, progressively the hidden layers extract and synthesis complex attributes from the input layer features. For example for a photo of a face, the first few layers might remove the background noise and extract edges, the next few layers extract the facial features, from the facial features thus extracted next layers might recompose and detect the face. Furthermore, deep learning ensures the number of nodes required to represent a complex logical gate are reduced to \\(O(log(n))\\) from \\(2^{n-1}\\) for a single layered neural network.
+
+<figure>
+	<img src="{{ site.url }}/images/Forward_Backward_propagation.jpeg">
+	<figcaption> Schematic forward and backward propagation. (Source: Course Slide)</figcaption>
+</figure>
+
+Any layer, in a deep neural network, can be thought of as a block which takes in activation from \\(A_{l-1}\\) as input and is operated upon by \\(W_l, b_l\\) to form \\(z_l\\) acted on by activation function \\(g_l\\) to produced the output \\(A_{l}\\) passed on to the next block. In the backward propagation step, \\(dA_{l}\\) is the input producing the output of \\(dA_{l-1}\\), and in the process it requires cached \\(z_l, W_l, b_l\\) from forward propagation. The update for the weights \\(dW_l\\) and \\(db_l\\) are calculated in this backward propagation.
+
+From the discussions above, it is clear that the parameters controlling the efficiency of the neural networks are weights and offsets, \\(W_l\,\&\,b_l). However, the values of these parameters depends on hyperparameters such as :
+* Learning rate, \\(\alpha\)
+* \# iterations
+* \# hidden layers
+* \# hidden nodes per layers (units)
+* Choice of activation functions
+* Momentum
+* Mini batch size
+* Regularization
+
+The choice of parameters has a significant influence on the outputs, hence for each problem the sanity check has to be done to ensure better performance of the trained network.
