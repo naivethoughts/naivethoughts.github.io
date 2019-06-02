@@ -130,7 +130,7 @@ for iter in range(1000) :
 ### Lecture 1 - 10 Neural Network Basics
 
 <figure>
-	<img src="{{ site.url }}/codes/Neural_Network.png">
+	<img src="{{ site.url }}/images/Neural_Network.png">
 	<figcaption> Schematic neural network representation. (Source: https://towardsdatascience.com/)</figcaption>
 </figure>
 
@@ -141,3 +141,4 @@ The hidden layer nodes and weights are initialized with random values close to z
 #### Sigmoid function :
 \\[ \sigma(z)\,=\,\frac{1}{1\,+\,exp(-z)}\\]
 \\[ \sigma'(z)\,=\,\sigma(z)(1\,-\,sigma(z))]
+The function yields values in the range of 0 to 1, centered at 0.5 for \\(z\,=\,0.0\\). This function is suitable for
