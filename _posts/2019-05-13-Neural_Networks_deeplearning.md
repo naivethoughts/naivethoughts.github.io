@@ -144,3 +144,5 @@ The hidden layer nodes and weights are initialized with random values close to z
 The function yields values in the range of 0 to 1, centered at 0.5 for \\(z\,=\,0.0\\). This function has slow learning rates for low and high values of z, the learning rates improve for values close to zero. The sigmoid function is more suited for the output layer activation of binary classification problem.
 
 #### Hyperbolic tangent function :
+\\[ tanh(z)\,=\,\frac{exp(z)\,-\,exp(-z)}{exp(z)\,+\,exp(-z)}\\]
+\\[ tanh^\prime(z)\,=\,\frac{exp(z)\,-\,exp(-z)}{exp(z)\,+\,exp(-z)}\\]
