@@ -134,4 +134,4 @@ for iter in range(1000) :
 	<figcaption>Neural network representation 4</figcaption>
 </figure>
 
-The figure above represents a shallow neural network of three layers, with two hidden layers and one output layer. A mental picture to understand the working of a neural network is to imagine two coloured papers crumbled together, and neural network uncrumbles the ball to extract two distinct colored papers. The role of the hidden layers is to implement various logical gates to create pathways leading to distinct outputs
+The figure above represents a shallow neural network of three layers, with two hidden layers and one output layer. A mental picture to understand the working of a neural network is to imagine two coloured papers crumbled together, and neural network uncrumbles the paper ball to extract two distinct colored papers. In order to extract distinct outputs, the hidden layers implement various logical gates identifying similar characteristics of the inputs leading to the same output. The hidden layer nodes have activation 
