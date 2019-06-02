@@ -130,6 +130,8 @@ for iter in range(1000) :
 ### Lecture 1 - 10 Neural Network Basics
 
 <figure>
-	<img src="/images/Neural_Network.png">
+	<img src="{{ site.url }}//_posts/images/Neural_Network.png">
 	<figcaption>Neural network representation</figcaption>
 </figure>
+
+The figure above represents a shallow neural network of three layers, with two hidden layers and one output layer.
