@@ -21,4 +21,29 @@ reduced_X_train = X_train.drop(cols_with_missing, axis=1)
 reduced_X_valid = X_valid.drop(cols_with_missing, axis=1)
 ```
 
-  *
+  * Imputation : Fill the missing value with a number (mean, median, mode ?). As an extension, we can keep a track of the imputed value.
+
+```Python
+from sklearn.impute import SimpleImputer
+from sklearn.ensemble import RandomForestRegressor
+
+# Imputation
+my_imputer = SimpleImputer()
+
+imputed_X_train = pd.DataFrame(my_imputer.fit_transform(X_train))
+imputed_X_valid = pd.DataFrame(my_imputer.transform(X_valid))
+
+# Imputation removed column names; put them back
+imputed_X_train.columns = X_train.columns
+imputed_X_valid.columns = X_valid.
+
+# Define and fit model
+model = RandomForestRegressor(n_estimators=100, random_state=0)
+model.fit(imputed_X_train, y_train)
+
+# Fill in the line below: preprocess test data
+final_X_test = pd.DataFrame(final_imputer.transform(X_test))
+
+# Fill in the line below: get test predictions
+preds_test = model.predict(final_X_test)
+```
