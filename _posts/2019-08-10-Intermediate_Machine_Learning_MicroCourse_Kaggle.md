@@ -28,7 +28,7 @@ from sklearn.impute import SimpleImputer
 from sklearn.ensemble import RandomForestRegressor
 
 # Imputation
-my_imputer = SimpleImputer()
+final_imputer = SimpleImputer(strategy="median") # strategy = mean, median, most_frequent, constant
 
 imputed_X_train = pd.DataFrame(my_imputer.fit_transform(X_train))
 imputed_X_valid = pd.DataFrame(my_imputer.transform(X_valid))
