@@ -17,3 +17,8 @@ PS : Please let me know if the links are broken
 
 ## Cloud and Aerosol Interaction
 1. <a href="https://www.esrl.noaa.gov/csd/staff/graham.feingold/graham.feingold.presentations/14%20Feingold%20&%20Siebert.pdf" target="_blank">Cloud–Aerosol Interactions from the Micro to the Cloud Scale</a> *- G Feingold & H Siebert* (20 pg)
+
+## Cloud and Dynamics Interaction
+
+  # Convective Invigoration
+  < a href="https://www.sciencedirect.com/science/article/pii/S0169809514000106" target="_blank"> Review: Cloud invigoration by aerosols—Coupling between microphysics and dynamics </a> *- O.Altaratz, I.Koren, L.A.Remer & E.Hirsch * 
