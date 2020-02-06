@@ -39,10 +39,10 @@ for _ in range(int(input())):
 ```
 
 An approximation of Binet's formula, <br/>
-\\( F(n) = \frac{\phi^n}{\sqrt{5}} \\) <br/>
-\\( \phi = \frac{\sqrt{5} + 1}{2} \\) <br/>
+\\( F(n) = \frac{1}{\sqrt{5}}\phi^n \\) <br/>
+\\( \phi = \frac{1}{2}(\sqrt{5} + 1) \\) <br/>
 For the Fibonacci number with N digits, $$ F(n) = 10^{N} $$. Simplifying, <br/>
-\\( n > \frac{N \times \text{log}(10) + 0.5 \times \text{log}(5)}{\text{log}(\phi)} \\)
+\\( n > \frac{1}{\text{log}(\phi)}(N \times \text{log}(10) + 0.5 \times \text{log}(5)) \\)
 
 ```python
 import math
