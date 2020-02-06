@@ -38,8 +38,9 @@ for _ in range(int(input())):
     print(dataCalc[int(input())])
 ```
 
-From Binet's formula, <br/>
-\\( F(n) = \frac{\phi^n}{\sqrt{5}} \\) <br/>
+An approximation of Binet's formula, <br/>
+\\( F(n) = \frac{\phi^n}{\sqrt{5}} \\) <br/>,
+with \\( \phi = \frac{\sqrt{5} + 1}{2}) \\) <br/>.
 For the Fibonacci number with N digits, $$ F(n) = 10^{N} $$. Simplifying, <br/>
 \\( n > \frac{N\timeslog(10) + 0.5 \times log(5)}{log(\phi)} \\)
 
@@ -52,3 +53,9 @@ for _ in range(int(input())):
     n = float(input()) - 1
     print(math.ceil((n+numA)/denA))
 ```
+
+Because of the generalized nature, I prefer the first approach over the latter one - since the
+latter requires a prior knowledge of the formula of nth Fibonacci number.
+
+The closed form Binet's solution is
+\\( F(n) = \frac{(1 + \sqrt{5})^{n} - (1 - \sqrt{5})^{n}}{2^{n}\times \sqrt{5}} \\)
