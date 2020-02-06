@@ -1,5 +1,5 @@
 ---
-layout: projectEuler
+layout: post
 title: "Project Euler : Problem 25"
 date: 2020-02-05
 excerpt: "1000<sup>th</sup> Fibonacci Number"
