@@ -37,5 +37,5 @@ for a0 in range(t):
     print(cSum)
 ```
 Instead of using the sum of natural numbers equation, one can also use the sum of arithmetic series formula <br/>
-\\( \sum(n) = \frac{n}{2} (2 a_{1} + (n -1) d) \\) <br\>
+\\( \sum(n) = \frac{n}{2} (2 a_{1} + (n -1) d) \\) <br/>
 Here, a_{1} is the first element of the series, n is the number of elements of the series, d is the difference between successive terms. In this case inorder to find number of elements in the series, n = quotient(N,d).
