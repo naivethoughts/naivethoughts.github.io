@@ -11,7 +11,7 @@ Last updated : 02/05/2020
 
 ## <a href="https://projecteuler.net/problem=1" target="_blank"> Problem 1 </a>
 Sum of *n* natural numbers is given by<br/>
-\\( \sum(n) = \frac{(n)(n+1)}{2} \\)<br/>
+\\( \sum(n) = \frac{1}{2}(n)(n+1) \\)<br/>
 
 The required result is the sum of all multiples of 3 till n and sum of all multiples of 5 till n.
 However, we have multiples of 15 counted twice, since it can be prime factorized into 3 and 5. Therefore
