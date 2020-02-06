@@ -9,9 +9,8 @@ codes: false
 ---
 Last updated : 02/05/2020
 
-## Problem 25 : <a href="https://projecteuler.net/problem=25" target="_blank">
-Fibonacci Series </a>
-The Fibonacci series is, <br/>
+## Problem 25 :
+The <a href="https://projecteuler.net/problem=25" target="_blank">Fibonacci Series </a> is, <br/>
 $$ F(n) = F(n-1) + F(n-2) $$ <br/>
 $$ F(1) = F(1) + F(0) = 1 + 0 = 1 $$
 To find the term in the series with 1000 digits, the straight forward approach is to
