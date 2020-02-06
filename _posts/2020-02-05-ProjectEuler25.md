@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: projectEuler
 title: "Project Euler : Problem 25"
 date: 2020-02-05
 excerpt: "1000<sup>th</sup> Fibonacci Number"
 tags: [Project Euler, HackerRank, Python]
-post-list: true
+projectEuler: true
 comments: false
 ---
 Last updated : 02/05/2020
