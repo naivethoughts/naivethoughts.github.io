@@ -4,9 +4,8 @@ title: "Project Euler : Problem 25"
 date: 2020-02-05
 excerpt: "Project Euler : Problem List 20 - 30"
 tags: [Project Euler, HackerRank, Python]
-comments: false
-codes: false
 post-list: true
+comments: false
 ---
 Last updated : 02/05/2020
 
