@@ -17,7 +17,7 @@ The required result is the sum of all multiples of 3 till n and sum of all multi
 However, we have multiples of 15 counted twice, since it can be prime factorized into 3 and 5. Therefore
 from the previous sum, we need to subtract the multiples of 15.
 
-For finding the required sum using the sum of natural number formula under *N*, the *n* for 3, 5 and 15 are the quotient of n/3, n/5, n/15 and multiplying each sum by 3, 5 and 15 respectively. It can be represented as <br\>
+For finding the required sum using the sum of natural number formula under *N*, the *n* for 3, 5 and 15 are the quotient of n/3, n/5, n/15 and multiplying each sum by 3, 5 and 15 respectively. It can be represented as <br/>
 \\( 3 \sum(n//3) + 5 \sum(n//5) - 15 \sum(n//15) \\)
 
 ```python
@@ -38,4 +38,4 @@ for a0 in range(t):
 ```
 Instead of using the sum of natural numbers equation, one can also use the sum of arithmetic series formula <br/>
 \\( \sum(n) = \frac{n}{2} (2 a_{1} + (n -1) d) \\) <br/>
-Here, a_{1} is the first element of the series, n is the number of elements of the series, d is the difference between successive terms. In this case inorder to find number of elements in the series, n = quotient(N,d).
+Here, $a_{1}$ is the first element of the series, n is the number of elements of the series, d is the difference between successive terms. In this case inorder to find number of elements in the series, n = quotient(N,d).
