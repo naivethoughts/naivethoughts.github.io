@@ -38,9 +38,9 @@ for _ in range(int(input())):
     print(dataCalc[int(input())])
 ```
 
-From Binet's formula,
-\\( F(n) = \frac{\phi^n}{\sqrt{5}} \\)
-For the Fibonacci number with N digits, $$ F(n) = 10^{N} $$. Simplifying,
+From Binet's formula <br/>
+\\( F(n) = \frac{\phi^n}{\sqrt{5}} \\) <br/>
+For the Fibonacci number with N digits, $$ F(n) = 10^{N} $$. Simplifying, <br/>
 \\( n > \frac{N log(10) + 0.5 \times log(5)}{log(\phi)} \\)
 
 ```python
