@@ -42,7 +42,7 @@ An approximation of Binet's formula, <br/>
 \\( F(n) = \frac{\phi^n}{\sqrt{5}} \\) <br/>,
 with \\( \phi = \frac{\sqrt{5} + 1}{2}) \\) <br/>.
 For the Fibonacci number with N digits, $$ F(n) = 10^{N} $$. Simplifying, <br/>
-\\( n > \frac{N\timeslog(10) + 0.5 \times log(5)}{log(\phi)} \\)
+\\( n > \frac{N \times log(10) + 0.5 \times log(5)}{log(\phi)} \\)
 
 ```python
 import math
