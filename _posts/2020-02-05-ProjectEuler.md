@@ -19,8 +19,7 @@ index corresponding to the number.
 
 To solve this problem, a lookup table containing indices upto 5000 digits was created.
 From the lookup table, the location of the appearance of first N digit Fibonacci number
-could be calculated easily.
-The first **1000** digit number is **4782** Fibonacci term and **5000** digit number is **23922** th term.
+could be calculated easily. The first **1000** digit number is **4782** th and **5000** digit number is **23922** th Fibonacci term.
 
 ```python
 def computeFibonacci(n=5001):
