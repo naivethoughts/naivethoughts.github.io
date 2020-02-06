@@ -42,3 +42,13 @@ From Binet's formula,
 \\( F(n) = \frac{\phi^n}{\sqrt{5}} \\)
 For the Fibonacci number with N digits, $$ F(n) = 10^{N} $$. Simplifying,
 \\( n > \frac{N log(10) + 0.5 \times log(5)}{log(\phi)} \\)
+
+```python
+import math
+phi = (1.0 + math.sqrt(5))/2.0
+numA = 0.5*math.log10(5)
+denA = math.log10(phi)
+for _ in range(int(input())):
+    n = float(input()) - 1
+    print(math.ceil((n+numA)/denA))
+```
