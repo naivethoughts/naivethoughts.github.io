@@ -6,6 +6,7 @@ excerpt: "Cloud microphysics reading list for beginners"
 tags: [Cloud Microphysics]
 comments: false
 codes: false
+post-list: true
 ---
 Last updated : 11/28/2019
 
@@ -21,4 +22,4 @@ PS : Please let me know if the links are broken
 ## Cloud and Dynamics Interaction
 
   # Convective Invigoration
-  < a href="https://www.sciencedirect.com/science/article/pii/S0169809514000106" target="_blank"> Review: Cloud invigoration by aerosols—Coupling between microphysics and dynamics </a> *- O.Altaratz, I.Koren, L.A.Remer & E.Hirsch * 
+  < a href="https://www.sciencedirect.com/science/article/pii/S0169809514000106" target="_blank"> Review: Cloud invigoration by aerosols—Coupling between microphysics and dynamics </a> *- O.Altaratz, I.Koren, L.A.Remer & E.Hirsch *

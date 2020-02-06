@@ -6,11 +6,12 @@ excerpt: "Project Euler : Problem List 20 - 30"
 tags: [Project Euler, HackerRank, Python]
 comments: false
 codes: false
+post-list: true
 ---
 Last updated : 02/05/2020
 
-## Problem 25 :
-The <a href="https://projecteuler.net/problem=25" target="_blank">Fibonacci Series </a> is, <br/>
+## <a href="https://projecteuler.net/problem=25" target="_blank"> Problem 25 </a>
+Fibonacci series is defined as, <br/>
 $$ F(n) = F(n-1) + F(n-2) $$ <br/>
 $$ F(1) = F(1) + F(0) = 1 + 0 = 1 $$ <br/>
 To find the term in the series with 1000 digits, the straight forward approach is to
