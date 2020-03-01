@@ -23,3 +23,6 @@ PS : Please let me know if the links are broken
 
   # Convective Invigoration
   < a href="https://www.sciencedirect.com/science/article/pii/S0169809514000106" target="_blank"> Review: Cloud invigoration by aerosols—Coupling between microphysics and dynamics </a> *- O.Altaratz, I.Koren, L.A.Remer & E.Hirsch *
+
+## On writing
+1. <a href="http://paulgraham.com/useful.html" target="_blank"> How to write usefully </a>
